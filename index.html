@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@700&display=swap"
+        rel="stylesheet">
+    <title>CV</title>
+</head>
+
+<body class="body">
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                    <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="container-column">
+                <h1 class="name">
+                    Yuri Lapitski
+                </h1>
+                <div class="hello">
+                    Junior Full-stack developer
+                </div>
+            </div>
+            <img src="./image/foto.jpg" alt="foto" class="foto">
+
+            <div class="contacts" id="contacts">
+                <div class="title contacts-title">Contacts</div>
+                <div class="contacts-info">
+                    <div class="contact-text"> lyurik@tut.by</div>
+                    <div class="contacts-icon">
+                        <img src="./image/mail.svg" alt="mail">
+                    </div>
+                </div>
+                <div class="contacts-info">
+                    <div class="contact-text"> github.com/Yura703</div>
+                    <div class="contacts-icon">
+                        <img src="./image/Vector.svg" alt="mail">
+                    </div>
+                </div>
+                <div class="contacts-info">
+                    <div class="contact-text"> Discord: yura#3119</div>
+                    <div class="contacts-icon">
+                        <img src="./image/phone.png" alt="mail">
+                    </div>
+                </div>
+                <div class="contacts-info">
+                    <div class="contact-text"> Belarus, Minsk</div>
+                    <div class="contacts-icon">
+                        <img src="./image/map-pin.svg" alt="mail">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <section class="section summary" id="summary">
+                <h2 class="title">Summary</h2>
+                <span>
+                    Hi! I love programming and try to constantly develop in this. I want to become a Full-stack
+                    development specialist.
+                </span>
+            </section>
+            <section class="section skills" id="skills">
+                <h2 class="title">Skills</h2>
+                <ul>
+                    <li>Node.js, JavaScript, TypeScript, HTML, CSS</li>
+                    <li>C#, ASP Net Core, WPF</li>
+                    <li>VS Code, Visual Studio</li>
+                    <li>NestJS, Fastify, Express, Supertest, Jest</li>
+                    <li>MSSQL, MySQL, MongoDB, Postgress</li>
+                    <li>GIT, Docker, npm</li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="container">
+            <section class="section projects" id="projects">
+                <h2 class="title">Projects</h2>
+                <ul>
+                    <li><a href="https://github.com/Yura703/nodejs2021Q4-service">
+                            NodeJS-service
+                        </a></li>
+                    <li><a href="https://rolling-scopes-school.github.io/yura703-JSFE2021Q3/museum/">Museum</a></li>
+                </ul>
+            </section>
+            <section class="section code" id="code">
+                <h2 class="title">Code</h2>
+                <code class="code">
+<pre>
+function add (a, b) {
+    let res = '';
+    let c = 0
+    let a = a.split('');
+    let b = b.split('');
+
+    while (a.length || b.length || c) {
+        c += ~~a.pop() + ~~b.pop();
+        res = c % 10 + res;
+        c = c > 9;
+    }
+
+    return res;
+}
+</pre>
+                </code>
+            </section>
+        </div>
+
+        <div class="container">
+            <section class="section education" id="education">
+                <h2 class="title">Education</h2>
+                <ul>
+                    <li> Institute of Information Technologies BSUIR (2019-2021), software engineer;</li>
+                    <li> Belarusian National Technical University (2000-2006), electrical engineer.</li>
+                </ul>
+            </section>
+            <section class="section english" id="english">
+                <h2 class="title">English level</h2>
+                <span>
+                    A2. I improve the level of English at a language school
+                </span>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div>
+                <h3>2022</h3>
+            </div>
+            <a href="http://github.com/yura703">
+                <div class="git"></div>
+            </a>
+            <a href="https://rs.school/js/">
+                <div class="rss"></div>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
