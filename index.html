@@ -16,23 +16,35 @@
     <title>CV</title>
 </head>
 
-<body>
-    <header class="cv">
-        <div class="container-row">
+<body class="body">
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                    <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
             <div class="container-column">
                 <div class="name">
                     Yuri Lapitski
                 </div>
-                <div class="title"> About</div>
                 <div class="hello">
-                    Hi! I love programming and try to constantly develop in this. I want to become a Full-stack
-                    development specialist.
+                    Junior Full-stack developer
                 </div>
             </div>
-            <div class="foto">
-                foto
-            </div>
-            <div class="contacts">
+            <div class="foto"></div>
+            <div class="contacts" id="contacts">
                 <div class="title contacts-title">Contacts</div>
                 <div class="contacts-info">
                     <div class="contact-text"> lyurik@tut.by</div>
@@ -60,36 +72,86 @@
                 </div>
             </div>
         </div>
-    </header>
 
-    <main class="container-row ss">
-        <div class="left-column ss">
-            <div class="education ss">
-                <div class="title">Education</div>
-                Institute of Information Technologies BSUIR (2019-2021), software engineer;
-                Belarusian National Technical University (2000-2006), electrical engineer.
-            </div>
-
-            <div class="experience ss">
-                <div class="title">Work experience</div>
-                EXPERIENCE
-            </div>
-        </div>
-
-        <div class="right-column ss">
-            <div class="project ss">
-                <div class="title">PROJECTS</div>
-
-            </div>
-            <div class="title">Code sample</div>
-            <div class="skills ss">
+        <div class="container">
+            <section class="section summary" id="summary">
+                <div class="title">Summary</div>
+                <span>
+                    Hi! I love programming and try to constantly develop in this. I want to become a Full-stack
+                    development specialist.
+                </span>
+            </section>
+            <section class="section skills" id="skills">
                 <div class="title">Skills</div>
-                Skills
-            </div>
+                <ul>
+                    <li>Node.js, JavaScript, TypeScript, HTML, CSS</li>
+                    <li>C#, ASP Net Core, WPF</li>
+                    <li>VS Code, Visual Studio</li>
+                    <li>NestJS, Fastify, Express, Supertest, Jest</li>
+                    <li>MSSQL, MySQL, MongoDB, Postgress</li>
+                    <li>GIT, Docker, npm</li>
+                </ul>
+            </section>
         </div>
-        <div class="title">English level</div>
+
+        <div class="container">
+            <section class="section projects" id="projects">
+                <div class="title">Projects</div>
+                <ul>
+                    <li><a href="https://github.com/Yura703/nodejs2021Q4-service">
+                            NodeJS-service
+                        </a></li>
+                    <li><a href="https://rolling-scopes-school.github.io/yura703-JSFE2021Q3/museum/">Museum</a></li>
+                </ul>
+            </section>
+            <section class="section code" id="code">
+                <div class="title">Code</div>
+                <code class="code">
+<pre>
+function add (a, b) {
+    let res = '';
+    let c = 0
+    let a = a.split('');
+    let b = b.split('');
+
+    while (a.length || b.length || c) {
+        c += ~~a.pop() + ~~b.pop();
+        res = c % 10 + res;
+        c = c > 9;
+    }
+
+    return res;
+}
+</pre>
+                </code>
+            </section>
+        </div>
+
+        <div class="container">
+            <section class="section education" id="education">
+                <div class="title">Education</div>
+                <ul>
+                    <li> Institute of Information Technologies BSUIR (2019-2021), software engineer;</li>
+                    <li> Belarusian National Technical University (2000-2006), electrical engineer.</li>
+                </ul>
+            </section>
+            <section class="section english" id="english">
+                <div class="title">English level</div>
+                <span>
+                    A2. I improve the level of English at a language school
+                </span>
+            </section>
+        </div>
     </main>
 
+    <footer class="footer">
+        <div class="container">
+            <div>a</div>
+            <div class="git"> <a href="http://github.com/yura703"></a></div>
+
+            <div class="rss"></div>
+        </div>
+    </footer>
 </body>
 
 </html>
